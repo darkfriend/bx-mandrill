@@ -1,0 +1,5 @@
+{
+    "require": {
+        "darkfriend/php5-curl": "^1.0"
+    }
+}
