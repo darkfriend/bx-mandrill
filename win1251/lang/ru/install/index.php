@@ -1,6 +1,6 @@
 <?php
 $MESS["D2F_MODULE_NAME_MANDRILL"] = "Интеграция с Mandrill (by MailChimp)";
-$MESS["D2F_MODULE_DESCRIPTION_MANDRILL"] = 'Модуль добавляет возможность отправку сообщений через mandrill (инструмент отправки единоразовых сообщений от MailChimp)';
+$MESS["D2F_MODULE_DESCRIPTION_MANDRILL"] = 'Модуль добавляет возможность отправки сообщений через mandrill (инструмент отправки единоразовых сообщений от MailChimp)';
 $MESS["D2F_MANDRILL_STEP1"] = "Установка модуля";
 $MESS["D2F_MANDRILL_UNSTEP1"] = "Деинсталляция модуля";
 $MESS["D2F_MANDRILL_INSTALL_LAST_MSG"] = "Теперь вы можете использовать \"Интеграция с Mandrill (by MailChimp)\".<br>Напоминаем, что ваши <a href='http://yasobe.ru/na/thankyou_bitrix'>донаты</a> ускоряют выход обновлений и новых бесплатных модулей.<br>Приятного использования, команда <a href='http://dev2fun.com'>dev2fun</a>";

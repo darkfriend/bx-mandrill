@@ -70,6 +70,15 @@ $tabControl = new CAdminTabControl("tabControl", $aTabs);
 if ($request->isPost() && check_bitrix_sessid()) {
 
     $arFields = $request->getPost('options');
+    if(empty($arFields['enabled'])) {
+        $arFields['enabled'] = 'N';
+    }
+    if(empty($arFields['trackOpens'])) {
+        $arFields['trackOpens'] = 'N';
+    }
+    if(empty($arFields['trackClicks'])) {
+        $arFields['trackClicks'] = 'N';
+    }
     foreach ($arFields as $k => $arField) {
         Option::set($curModuleName, $k, $arField);
     }
