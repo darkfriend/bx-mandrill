@@ -2,9 +2,11 @@
 /**
  * @author dev2fun (darkfriend)
  * @copyright darkfriend
- * @version 1.0.0
+ * @version 1.0.1
  */
-if (class_exists("dev2fun_mandrill")) return;
+if (class_exists("dev2fun_mandrill")) {
+    return;
+}
 
 IncludeModuleLangFile(__FILE__);
 
@@ -21,8 +23,8 @@ Loader::registerAutoLoadClasses(
     [
         'Dev2fun\\Mandrill\\Base' => 'include.php',
         'Dev2fun\\Mandrill\\Config' => 'classes/general/Config.php',
-//        'Dev2fun\MultiDomain\SubDomain' => 'classes/general/SubDomain.php',
-//        'Dev2fun\MultiDomain\HLHelpers' => 'lib/HLHelpers.php',
+        //        'Dev2fun\MultiDomain\SubDomain' => 'classes/general/SubDomain.php',
+        //        'Dev2fun\MultiDomain\HLHelpers' => 'lib/HLHelpers.php',
     ]
 );
 
@@ -35,7 +37,7 @@ class dev2fun_mandrill extends CModule
     var $MODULE_DESCRIPTION;
     var $MODULE_GROUP_RIGHTS = 'Y';
 
-    public function dev2fun_mandrill()
+    public function __construct()
     {
         include(__DIR__ . '/version.php');
         $this->MODULE_VERSION = $arModuleVersion['VERSION'];
@@ -50,7 +52,9 @@ class dev2fun_mandrill extends CModule
     public function DoInstall()
     {
         global $APPLICATION;
-        if (!check_bitrix_sessid()) return;
+        if (!check_bitrix_sessid()) {
+            return;
+        }
         try {
             $this->installDB();
             $this->registerEvents();
@@ -96,7 +100,9 @@ class dev2fun_mandrill extends CModule
     public function DoUninstall()
     {
         global $APPLICATION;
-        if (!check_bitrix_sessid()) return;
+        if (!check_bitrix_sessid()) {
+            return;
+        }
         try {
             $this->unInstallDB();
             $this->unRegisterEvents();

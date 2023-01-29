@@ -85,7 +85,7 @@ if ($request->isPost() && check_bitrix_sessid()) {
 
 }
 $msg = new CAdminMessage([
-    'MESSAGE' => Loc::getMessage("D2F_MANDRILL_DONATE_MESSAGES", ['#LINK#' => 'http://yasobe.ru/na/thankyou_bitrix']),
+    'MESSAGE' => Loc::getMessage("D2F_MANDRILL_DONATE_MESSAGES", ['#LINK#' => 'https://www.tinkoff.ru/cf/36wVfnMf7mo']),
     'TYPE' => 'OK',
     'HTML' => true,
 ]);
@@ -107,7 +107,7 @@ $tabControl->begin();
     $tabControl->beginNextTab();
     ?>
     <!--    <tr class="heading">-->
-    <!--        <td colspan="2"><b>--><? //echo GetMessage("D2F_COMPRESS_HEADER_SETTINGS")?><!--</b></td>-->
+    <!--        <td colspan="2"><b>--><?php //echo GetMessage("D2F_COMPRESS_HEADER_SETTINGS")?><!--</b></td>-->
     <!--    </tr>-->
     <tr>
         <td width="40%">
