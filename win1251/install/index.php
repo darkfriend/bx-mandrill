@@ -2,7 +2,7 @@
 /**
  * @author dev2fun (darkfriend)
  * @copyright darkfriend
- * @version 1.0.1
+ * @version 1.0.2
  */
 if (class_exists("dev2fun_mandrill")) {
     return;
